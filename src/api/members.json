@@ -1,0 +1,97 @@
+{
+  "a": [
+    {
+      "roomId": "A001",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A002",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A003",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A004",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A005",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A101",
+      "owners": [
+        {
+          "name": "Nirmalkumar Ramesh Patil"
+        }
+      ],
+      "area": 865
+    },
+    {
+      "roomId": "A102",
+      "owners": [
+        {
+          "name": "Manilal Talakshi Savla"
+        },
+        {
+          "name": "Nirav Manilal Savla"
+        }
+      ],
+      "area": 577
+    },
+    {
+      "roomId": "A103",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A104",
+      "owners": [
+        {
+          "name": "Sai Saptagiri Developers"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "roomId": "A105",
+      "owners": [
+        {
+          "name": "Vilas Tukaram Rawool"
+        }
+      ],
+      "area": 435
+    }
+  ]
+}

@@ -1,3 +1,29 @@
-<p>
-  list works!
-</p>
+<br>
+<h1 class="text-center">List of Members</h1>
+<br>
+<table class="table table-striped">
+  <thead  class="thead-dark">
+    <tr>
+      <th scope="col">Room Number</th>
+      <th scope="col">Owner(s)</th>
+      <th scope="col">Area (sq. ft.)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of aMembers">
+      <th scope="row">{{member.roomId}}</th>
+      <td>
+        <div *ngFor="let owner of member.owners">
+          {{owner.name}}
+        </div>
+      </td>
+      <td>{{member.area}}</td>
+      <td>
+        <button class="btn btn-secondary">Edit</button>
+        <button class="btn btn-secondary ml-md-1">View Ledger</button>
+        <button class="btn btn-secondary ml-md-1">View Maintenance Bill</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

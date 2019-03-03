@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ListService } from "./list.service";
 
 @Component({
-  selector: 'pm-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  templateUrl: "./list.component.html",
+  styleUrls: ["./list.component.css"]
 })
 export class ListComponent implements OnInit {
+  aMembers = [];
 
-  constructor() { }
+  constructor(private listService: ListService) {}
 
   ngOnInit() {
+    this.listService.getMembers().subscribe(response => {
+      this.aMembers = response.a;
+    });
   }
-
 }
