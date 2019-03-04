@@ -1,28 +1,46 @@
-<br>
+<br />
 <h1 class="text-center">List of Members</h1>
-<br>
+<br />
 <table class="table table-striped">
-  <thead  class="thead-dark">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">Room Number</th>
       <th scope="col">Owner(s)</th>
       <th scope="col">Area (sq. ft.)</th>
+      <th>Two Wheelers</th>
+      <th>Three Wheelers</th>
+      <th>Four Wheelers</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let member of aMembers">
-      <th scope="row">{{member.roomId}}</th>
+      <th scope="row">{{ member.roomId }}</th>
       <td>
         <div *ngFor="let owner of member.owners">
-          {{owner.name}}
+          {{ owner.name }}
         </div>
       </td>
-      <td>{{member.area}}</td>
+      <td>{{ member.area }}</td>
+      <td>
+        <div *ngFor="let vehicle of member.vehicles?.two">
+          {{ vehicle.regNumber }}
+        </div>
+      </td>
+      <td>
+        <div *ngFor="let vehicle of member.vehicles?.three">
+          {{ vehicle.regNumber }}
+        </div>
+      </td>
+      <td>
+        <div *ngFor="let vehicle of member.vehicles?.four">
+          {{ vehicle.regNumber }}
+        </div>
+      </td>
       <td>
         <button class="btn btn-secondary">Edit</button>
         <button class="btn btn-secondary ml-md-1">View Ledger</button>
-        <button class="btn btn-secondary ml-md-1">View Maintenance Bill</button>
+        <button class="btn btn-secondary ml-md-1" (click)="viewMaintenanceBill(member.roomId)">View Maintenance Bill</button>
       </td>
     </tr>
   </tbody>

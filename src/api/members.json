@@ -7,7 +7,10 @@
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "vehicles": {
+        "two": [{ "regNumber": "6466" }]
+      }
     },
     {
       "roomId": "A002",
@@ -52,7 +55,10 @@
           "name": "Nirmalkumar Ramesh Patil"
         }
       ],
-      "area": 865
+      "area": 865,
+      "vehicles": {
+        "two": [{ "regNumber": "MH 19 AF 8471" }]
+      }
     },
     {
       "roomId": "A102",
@@ -92,6 +98,21 @@
         }
       ],
       "area": 435
+    },
+    {
+      "roomId": "A304",
+      "owners": [
+        {
+          "name": "Venu Bhaskaran Pillai"
+        }
+      ],
+      "area": 865,
+      "vehicles": {
+        "two": [
+          { "regNumber": "MH 05 CD 3023" },
+          { "regNumber": "MH 05 DV 2106" }
+        ]
+      }
     }
   ]
 }
