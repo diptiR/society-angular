@@ -15,7 +15,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let member of aMembers">
-      <th scope="row">{{ member.roomId }}</th>
+      <th scope="row">{{ member.roomId | uppercase }}</th>
       <td>
         <div *ngFor="let owner of member.owners">
           {{ owner.name }}
@@ -40,7 +40,7 @@
       <td>
         <button class="btn btn-secondary">Edit</button>
         <button class="btn btn-secondary ml-md-1">View Ledger</button>
-        <button class="btn btn-secondary ml-md-1" (click)="viewMaintenanceBill(member.roomId)">View Maintenance Bill</button>
+        <button class="btn btn-secondary ml-md-1" (click)="viewMaintenanceBill(member.roomId)">Generate Maintenance Bill</button>
       </td>
     </tr>
   </tbody>

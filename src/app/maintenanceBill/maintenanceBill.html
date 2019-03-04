@@ -1,1 +1,55 @@
-<h1>Maintenance Bill</h1>
+<br />
+<h1 class="text-center">Maintenance Bill</h1>
+<br />
+<div class="container">
+  <form formGroupName="maintainForm">
+    <div class="row">
+      <div class="col-2">
+        <label>Year</label>
+        <select class="drop-down ml-md-2">
+          <option>Select</option>
+          <option *ngFor="let year of years" [value]="year.value">
+            {{ year.label }}
+          </option>
+        </select>
+      </div>
+      <div class="col-2">
+        <label>Month</label>
+        <select class="drop-down ml-md-2">
+          <option>Select</option>
+          <option *ngFor="let month of months" [value]="month.value">
+            {{ month.label }}
+          </option>
+        </select>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-secondary" type="button" (click)="addField()">
+          Add Field
+        </button>
+      </div>
+    </div>
+    <br />
+    <div formArrayName="fields">
+    <div class="row col-12" *ngFor="let field of fields.controls;let i = index;">
+      <!-- The repeated alias template -->
+      <input type="text" formControlName="i" />
+      <input type="text" formControlName="i" />
+      
+      <div>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          (click)="deleteField(i)"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <button class="btn btn-primary" type="button" (click)="onSubmit()">
+        Generate
+      </button>
+    </div>
+  </form>
+</div>

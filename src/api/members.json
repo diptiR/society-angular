@@ -1,67 +1,79 @@
 {
   "a": [
     {
-      "roomId": "A001",
+      "roomId": "a001",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
       "area": 0,
+      "sold": true,
+      "documentsReceived": false,
       "vehicles": {
         "two": [{ "regNumber": "6466" }]
       }
     },
     {
-      "roomId": "A002",
+      "roomId": "a002",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "sold": true,
+      "documentsReceived": false
     },
     {
-      "roomId": "A003",
+      "roomId": "a003",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "sold": false,
+      "documentsReceived": false
     },
     {
-      "roomId": "A004",
+      "roomId": "a004",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "sold": false,
+      "documentsReceived": false
     },
     {
-      "roomId": "A005",
+      "roomId": "a005",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "sold": false,
+      "documentsReceived": false
     },
     {
-      "roomId": "A101",
+      "roomId": "a101",
       "owners": [
         {
           "name": "Nirmalkumar Ramesh Patil"
         }
       ],
       "area": 865,
+      "sold": true,
+      "documentsReceived": true,
       "vehicles": {
         "two": [{ "regNumber": "MH 19 AF 8471" }]
       }
     },
     {
-      "roomId": "A102",
+      "roomId": "a102",
       "owners": [
         {
           "name": "Manilal Talakshi Savla"
@@ -70,43 +82,53 @@
           "name": "Nirav Manilal Savla"
         }
       ],
-      "area": 577
+      "area": 577,
+      "sold": true,
+      "documentsReceived": true
     },
     {
-      "roomId": "A103",
+      "roomId": "a103",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "sold": false,
+      "documentsReceived": false
     },
     {
-      "roomId": "A104",
+      "roomId": "a104",
       "owners": [
         {
           "name": "Sai Saptagiri Developers"
         }
       ],
-      "area": 0
+      "area": 0,
+      "sold": false,
+      "documentsReceived": false
     },
     {
-      "roomId": "A105",
+      "roomId": "a105",
       "owners": [
         {
           "name": "Vilas Tukaram Rawool"
         }
       ],
-      "area": 435
+      "area": 435,
+      "sold": true,
+      "documentsReceived": true
     },
     {
-      "roomId": "A304",
+      "roomId": "a304",
       "owners": [
         {
           "name": "Venu Bhaskaran Pillai"
         }
       ],
       "area": 865,
+      "sold": true,
+      "documentsReceived": true,
       "vehicles": {
         "two": [
           { "regNumber": "MH 05 CD 3023" },
