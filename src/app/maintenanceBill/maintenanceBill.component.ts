@@ -20,14 +20,15 @@ export class MaintenanceBillComponent implements OnInit {
   }
 
   addField(): void {
+    this.fields = this.getFields();
     this.fields.push(this.fb.group({
       "label":[],
       "value":[]
     }));
   }
 
-  deleteField(index: Number): void {
-    this.fields.controls.splice(index, 1);
+  deleteField(index: number): void {
+    this.fields.removeAt(index);
   }
 
   onSubmit(){
@@ -42,6 +43,5 @@ export class MaintenanceBillComponent implements OnInit {
       month: [""],
       fields: this.fb.array([])
     });
-    this.fields = this.getFields();
   }
 }
