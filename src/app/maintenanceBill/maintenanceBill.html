@@ -29,19 +29,24 @@
       </div>
     </div>
     <div formArrayName="fields" class="row" *ngFor="let field of fields.controls;let i = index;">
-      <div class="row col-12 mt-1" [formGroupName]="i">
+      <div class="row col-12 mt-2" [formGroupName]="i">
         <div class="col-3">
           Label: <input type="text" formControlName="label" />
         </div>
         <div class="col-3">
           Value: <input type="text" formControlName="value" />
         </div>
+        <div class="col-3">
+          <button class="btn btn-secondary" type="button" (click)="deleteField(i)">
+          Delete
+        </button>
+        </div>
       </div>
     </div>
     <div class="row">
       <button class="btn btn-primary" type="button" (click)="onSubmit()">
         Generate
-      </button> 
+      </button>
     </div>
   </form>
 </div>
