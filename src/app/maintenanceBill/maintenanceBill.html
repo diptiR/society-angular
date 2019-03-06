@@ -28,7 +28,11 @@
         </button>
       </div>
     </div>
-    <div formArrayName="fields" class="row" *ngFor="let field of fields.controls;let i = index;">
+    <div
+      formArrayName="fields"
+      class="row"
+      *ngFor="let field of fields.controls; let i = index"
+    >
       <div class="row col-12 mt-2" [formGroupName]="i">
         <div class="col-3">
           Label: <input type="text" formControlName="label" />
@@ -37,9 +41,13 @@
           Value: <input type="text" formControlName="value" />
         </div>
         <div class="col-3">
-          <button class="btn btn-secondary" type="button" (click)="deleteField(i)">
-          Delete
-        </button>
+          <button
+            class="btn btn-secondary"
+            type="button"
+            (click)="deleteField(i)"
+          >
+            Delete
+          </button>
         </div>
       </div>
     </div>
@@ -49,4 +57,67 @@
       </button>
     </div>
   </form>
+</div>
+<hr />
+<div class="container jumbotron">
+  <h4 class="text-center">SAI SHANTI CO-OPERATIVE HOUSING SOCIETY LTD</h4>
+  <h5 class="text-center">REGD NO. : TNA/DOM/HSG/TC/27936/2015</h5>
+  <h6 class="text-center">SUNIL NAGAR, MAUJE NANDIVLI, DOMBIVLI (EAST)</h6>
+  <hr />
+  <div class="clearfix">
+    <div class="float-left">
+      <span> [ C-002 ] Dipti Redkar </span>
+      <br />
+      <br />
+      <span>Particular: For Feb 2019</span>
+    </div>
+    <div class="float-right">
+      <span>Bill No: 1002</span><br />
+      <span>Sq. Ft: 515.00</span><br />
+      <span>Date: 01/01/2019</span>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-6">
+      <div class="float-left">Nature of Charges</div>
+      <div class="float-right">Amount</div>
+    </div>
+    <div class="col-6">
+      <div class="float-left">Nature of Charges</div>
+      <div class="float-right">Amount</div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-6">
+      <div class="float-left">Sinking Fund</div>
+      <div class="float-right">231</div>
+    </div>
+    <div class="col-6">
+      <div class="float-left">Electric Charges</div>
+      <div class="float-right">250</div>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-6">
+      <div class="float-left">Water Charges</div>
+      <div class="float-right">100</div>
+    </div>
+    <div class="col-6">
+      <div class="float-left">Service Charges</div>
+      <div class="float-right">350</div>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-6">
+      <div class="float-left">Repair & Maintenance</div>
+      <div class="float-right">100</div>
+    </div>
+    <div class="col-6">
+      <div class="float-left">Pooja Contribution</div>
+      <div class="float-right">100</div>
+    </div>
+  </div>
+  <hr />
 </div>

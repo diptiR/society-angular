@@ -1,0 +1,28 @@
+{
+  "maintenanceCharges": [
+    {
+      "title": "Electric Charges",
+      "amount": 250
+    },
+    {
+      "title": "Water Charges",
+      "amount": 150
+    },
+    {
+      "title": "Repair & Maintenance",
+      "amount": 100
+    },
+    {
+      "title": "Service Charges",
+      "amount": 350
+    },
+    {
+      "title": "Pooja Contribution",
+      "amount": 100
+    },
+    {
+      "title": "Interest",
+      "amount": 0
+    }
+  ]
+}
